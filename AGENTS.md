@@ -2,8 +2,10 @@
 
 - **Root_Folder**: `/`
 - **Agents_Folder**: `.agents`
+- **Skills_Folder**: `.agents/skills`
+- **Prompts_Folder**: `.agents/prompts`
 - **Agents_file**: `AGENTS.md`
-- **Project_Folder**: `doc`
+- **Documentation_Folder**: `doc`
 
 ## Product Overview
 
@@ -38,9 +40,9 @@ demo-prompt is a repository for managing and demonstrating agent prompts and ski
 .                         # Project root  
 ├── AGENTS.md             # This file with instructions for AI agents
 ├── .agents/              # Agents related files (skills, specs, etc)
-│   └── skills/           # Custom agent skills
+│   └── skills/           # Reusable prompts directory
+│   └── prompts/          # Prompts
 ├── doc/                  # Project related files (specs, plans, etc)
-├── prompt/               # Reusable prompts directory
 ├── README.md             # Human friendly project overview
 └── .gitignore            # Git ignore file
 ```
@@ -56,13 +58,3 @@ demo-prompt is a repository for managing and demonstrating agent prompts and ski
 - Chat responses must be in the language of the user prompt.
 - Sacrifice grammar for conciseness when needed to fit response limits.
 - When using templates, ensure to replace {placeholders} with actual values.
-
-### Naming Conventions
-
-Use slugs with hyphens for any identifiers or non code file names.
-
-Prefix specifications, branches, and commit messages with the following tags:
-
-- `feat` : For new features or significant changes.
-- `fix` : For bug fixes or minor improvements.
-- `chore` : For routine tasks, maintenance, or non-functional changes.

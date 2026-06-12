@@ -4,13 +4,12 @@ Act as a QA developer specializing in Spring Framework Testing.
 
 # Task
 
-Implement the integration test for the endpoint provided.
-Use the acceptance criteria file provided.
+Implement the unit test for the class provided.
 Do not write production code or documentation, just the testing code.
 
 # Context
 
-- The endpoint POST /sessions/activities
+- The class 
 - The method createSessionActivity of controller [SessionActivityController.java](../../../src/main/java/com/vitaly/gef/infrastructure/api/controller/calendar/session/SessionActivityController.java)
 - The Test class [CreateSessionActivityIT.java](../../../src/integrationTest/java/com/vitaly/gef/infrastructure/api/controller/calendar/session/CreateSessionActivityIT.java)
 - The build file [build.gradle](../../../build.gradle)

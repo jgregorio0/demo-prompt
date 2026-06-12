@@ -1,3 +1,5 @@
+# Analyze Acceptance Criteria
+
 # Role
 
 Act as a Senior Business Analyst and QA Lead specializing.
@@ -8,22 +10,8 @@ Analyze the provided Class and context, then generate a comprehensive "Acceptanc
 
 # Context
 
-- Method to
-  test [SignatureService.java](../../src/main/java/com/vitaly/pt/formacion/application/signature/SignatureService.java)
-- Method onSignatureCreation in service
-  [WorkerAttendanceService.java](../../src/main/java/com/vitaly/pt/formacion/application/attendance/worker/WorkerAttendanceService.java)
-  listening to
-  [SignatureCreationEvent.java](../../src/main/java/com/vitaly/pt/formacion/domain/signature/creation/SignatureCreationEvent.java)
-- Method onWorkerAttendanceCreation in
-  service [AttendanceService.java](../../src/main/java/com/vitaly/pt/formacion/application/attendance/AttendanceService.java)
-  listening
-  to [WorkerAttendanceCreationEvent.java](../../src/main/java/com/vitaly/pt/formacion/domain/attendance/worker/creation/WorkerAttendanceCreationEvent.java)
-- Method onWorkerAttendanceCreation in
-  service [CompletedSignatureAttendanceService.java](../../src/main/java/com/vitaly/pt/formacion/application/execution/enrollment/communication/CompletedSignatureAttendanceService.java)
-  listening
-  to [WorkerAttendanceCreationEvent.java](../../src/main/java/com/vitaly/pt/formacion/domain/attendance/worker/creation/WorkerAttendanceCreationEvent.java)
-- The current acceptance
-  criteria [create_signature_acceptance_criteria.md](../../docs/create_signature_acceptance_criteria.md)
+- Method createSessionActivity in controler [SessionActivityController.java](../../../src/main/java/com/vitaly/gef/infrastructure/api/controller/calendar/session/SessionActivityController.java)
+- Service [SessionActivityService.java](../../../src/main/java/com/vitaly/gef/application/calendar/session/SessionActivityService.java)
 
 # Constraints
 
@@ -50,6 +38,5 @@ Analyze the provided Class and context, then generate a comprehensive "Acceptanc
 
 # Output checklist
 
-[] The file [create_signature_acceptance_criteria.md](../../docs/create_signature_acceptance_criteria.md) including up
+[] The file [create_activity_acceptance_criteria.md](docs/create_activity_acceptance_criteria.md) including up
 to 6 acceptance criteria
-   

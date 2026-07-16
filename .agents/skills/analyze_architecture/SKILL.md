@@ -1,25 +1,13 @@
 ---
-name: analyze architecture
+name: Analyze architecture
 description: "Analyzes a specific codebase feature across all architectural layers and generates structured technical documentation with diagrams."
 ---
 
-# Role
-
-Act as a Principal Software Architect and Technical Writer specializing in reverse-engineering legacy systems and
-documenting complex software architectures.
-
-# Task
-
-Analyze the existing codebase to understand, map, and document how the feature works.
-You will produce a comprehensive technical documentation file containing architectural descriptions and Mermaid.js
-diagrams.
-
 # Context
 
-- The project includes the feature information in the `docs/technical/[feature_name].architecture.md`.
 - The feature exposed via a set of API endpoints.
 - You have access to the codebase containing the routing, controller, application/service, domain/business logic, and
-  data persistence layers.
+  data persistence layers in the code directories: [code_directories.md](code_directories.md).
 
 # Steps to follow
 
@@ -30,62 +18,16 @@ diagrams.
 
 # Specification Template
 
-Generate the final documentation exactly matching the structural template between ---. Save/output this content
-specifically for the file path: `docs/technical/[feature_name].architecture.md`.
+Generate the final documentation exactly matching the structural template [template.md](template.md).
 
----
-
-# Rocket Feature
-
-## Description
-
-Provide a clear, high-level summary of the Rocket Management feature using the standard User Story format:
-
-- **As a** [System User / Admin / Role], **I can** [perform rocket management actions], **so that
-  ** [business value/benefit is achieved].
-
-## Logic Flowchart
-
-Provide a brief textual overview of the conditional logic and decision paths.
-
-```mermaid
-flowchart TD
-%% Ensure clear start, decision points, and end states
-```
-
-```
-
-## Sequence diagram
-{Simple description of the diagram}
-```mermaid
-sequenceDiagram
-%% Use clear participant aliases and descriptive activation lifelines
-    
-```
-
-## Class diagram
-
-{Simple description of the diagram}
-
-```mermaid
-classDiagram
-%% Include key properties and methods relevant to the rocket feature
-```
-
-## Entity relationship diagram
-
-{Simple description of the diagram}
-
-```mermaid
-erDiagram
-%% Use standard Crow's Foot notation (e.g., ||--o{ )
-```
-
----
+## Constraints
+- Do not run tests
+- Do not modify any existing file.
+- Write the output file only.
 
 ## Output checklist
 
-- [ ] The output should be a md file at `docs/[feature_name].architecture.md` containing:
+- [ ] The output should be a md file at `docs/[feature]/architecture.md` containing:
 - [ ] Title
 - [ ] Description
 - [ ] Flow chart

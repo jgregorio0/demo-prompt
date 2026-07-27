@@ -1,4 +1,0 @@
-/analyze
-feature=export_classrooms_with_address
-class=com.vitaly.gef.infrastructure.api.controller.classrooms.classroom.ClassroomController
-method=exportExcel

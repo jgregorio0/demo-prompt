@@ -12,7 +12,7 @@ description: "Analyzes a specific codebase feature across all architectural laye
 # Steps to follow
 
 1. **API Entry Points:** Identify the HTTP methods, routes, and controller classes handling rocket-related requests.
-2. **Business Logic & Domain:** Trace how data is processed, validated, and manipulated within the domain layers.
+2. **Domain:** Trace how data is processed, validated, and manipulated within the domain layers.
 3. **Data & Persistence:** Identify the underlying database models, relationships, and third-party API integrations
    involved.
 
@@ -23,7 +23,6 @@ Generate the final documentation exactly matching the structural template [templ
 ## Constraints
 - Do not run tests
 - Do not modify any existing file.
-- Write the output file only.
 
 ## Output checklist
 

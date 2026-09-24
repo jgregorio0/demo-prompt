@@ -80,19 +80,19 @@ Expect the following inputs or inspect the workspace for them:
 
 ### Step 4: Report Compilation & Delivery
 
-**Action:** Write the consolidated analysis into `analisis-user-stories.md` using the exact layout specified below.
+**Action:** Write the consolidated analysis into `user-story-invest-analysis.md` using the exact layout specified below.
 
 ```markdown
-# Reporte de Análisis e Ingeniería de Historias de Usuario (INVEST + BMAD)
+# User Story Analysis & Context Engineering Report (INVEST + BMAD)
 
-**Fecha de Análisis:** YYYY-MM-DD  
-**Agente Evaluador:** [Nombre / Modelo del Agente]  
-**Artefactos Consultados:** `prd.md`, `ARCHITECTURE-SPINE.md`, `DESIGN.md`  
+**Analysis Date:** YYYY-MM-DD  
+**Evaluating Agent:** [Agent Name / Model]  
+**Consulted Artifacts:** `prd.md`, `ARCHITECTURE-SPINE.md`, `DESIGN.md`  
 
 ## 1. Executive Summary & Gate Readiness
-| ID Story | Título Breve | Estado INVEST | Traceability (FR / AD / UX) | Action Item |
+| Story ID | Short Title | INVEST Status | Traceability (FR / AD / UX) | Action Item |
 | :--- | :--- | :--- | :--- | :--- |
-| Story-X.X | [Título] | ✅ Aprobada / ⚠️ Ajustar / ❌ Dividir | FR-x, AD-x, UX-DRx | [Acción requerida] |
+| Story-X.X | [Title] | ✅ Approved / ⚠️ Adjust / ❌ Split | FR-x, AD-x, UX-DRx | [Required Action] |
 
 ---
 
@@ -100,39 +100,35 @@ Expect the following inputs or inspect the workspace for them:
 
 ### [Story-ID] - [Story Title]
 
-#### User Story Original / Context
-> **Como** [Rol]  
-> **Quiero** [Capacidad]  
-> **Para** [Valor de negocio]  
+#### Original User Story / Context
+> **As a** [Role]  
+> **I want to** [Capability]  
+> **So that** [Business Value]  
 
-#### Evaluación INVEST
-* **Independent:** [Pasa/Falla] - [Razón]
-* **Negotiable:** [Pasa/Falla] - [Razón]
-* **Valuable:** [Pasa/Falla] - [Razón]
-* **Estimable:** [Pasa/Falla] - [Razón]
-* **Small:** [Pasa/Falla] - [Razón]
-* **Testable:** [Pasa/Falla] - [Razón]
+#### INVEST Evaluation
+* **Independent:** [Pass/Fail] - [Reason]
+* **Negotiable:** [Pass/Fail] - [Reason]
+* **Valuable:** [Pass/Fail] - [Reason]
+* **Estimable:** [Pass/Fail] - [Reason]
+* **Small:** [Pass/Fail] - [Reason]
+* **Testable:** [Pass/Fail] - [Reason]
 
-#### Directivas para el Dev Agent
-* **Context Requirements:** [Arquitectura AD-x / NFR-x relevante]
-* **Risks & Splitting:** [Estrategia de división si sobrepasa la ventana de contexto]
+#### Directives for the Dev Agent
+* **Context Requirements:** [Relevant Architecture AD-x / NFR-x]
+* **Risks & Splitting:** [Splitting strategy if exceeding context window limits]
 
-#### Propuesta Optimizada (Gherkin Format)
+#### Optimized Proposal (Gherkin Format)
 ```gherkin
-Feature: [Nombre de la Característica]
+Feature: [Feature Name]
   Traceability: FR-x, AD-x, UX-DRx
 
-  Scenario: [Caso de Éxito Principal]
-    Dado [Estado inicial del sistema]
-    Cuando [Acción del usuario u evento]
-    Entonces [Resultado esperado]
-    Y [Invariante de rendimiento o seguridad (NFR-x)]
+  Scenario: [Main Happy Path]
+    Given [Initial system state]
+    When [User action or event]
+    Then [Expected result]
+    And [Performance or security invariant (NFR-x)]
 
-  Scenario: [Caso de Borde o Fallback]
-    Dado [Condición de fallo u offline]
-    Cuando [Intento de ejecución]
-    Entonces [Mensaje de error o comportamiento degradado]
-```
-```
-
-4. Confirm creation of `./user-story-invest-analysis.md` and present summary to the user.
+  Scenario: [Edge Case or Fallback]
+    Given [Failure or offline condition]
+    When [Execution attempt]
+    Then [Error message or degraded behavior]

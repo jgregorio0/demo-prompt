@@ -1,5 +1,5 @@
 ---
-description: "CRÍTICO EN WINDOWS: Para ejecutar comandos en PowerShell 5.1 o bash y evitar errores comunes."
+description: "CRÍTICO EN WINDOWS: NUNCA usar && ni || en PowerShell 5.1 (usa ';' o 'if ($?)'). Detecta la shell primero."
 trigger: always_on
 ---
 

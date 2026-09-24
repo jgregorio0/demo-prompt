@@ -57,4 +57,4 @@ them:
 3. Validate <feature>, <start>, <task>, <skills> parameters are received.
 4. Parse and activate_skill <skills> received.
 5. Parse <task> received.
-6. Execute task using <feature> and <start> parameters to analyze the codebase and generate comprehensive documentation.
+6. Execute <task> using <feature> and <start> parameters to analyze the codebase and generate comprehensive documentation.
